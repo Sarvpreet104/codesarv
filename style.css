@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-logo {
+    width: 250px;
+}
+
+header p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* navbar */
+nav {
+    margin: 60px auto 0;
+    width: 80%;
+    background-color: #225343;
+    color: white;
+    border-radius: 30px;
+    padding: 25px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: #ab8f67;
+    text-decoration: underline;
+}
+
+/* Course section */
+.courses {
+    margin: 100px auto 0;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.courses-head {
+    width: 100%;
+    overflow: hidden;
+}
+
+.courses-head-img {
+    width: 100%;
+}
+
+.courses-row {
+    display: flex;
+    gap: 20px;
+    flex-basis: auto;
+
+    width: 90%;
+    margin: auto;
+}
+
+.courses-col {
+    border-radius: 30px;
+    width: 100%;
+}
+
+.courses-col div {
+    overflow: hidden;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.courses-col img {
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+
+    transition: 1s;
+}
+
+.courses-col img:hover {
+    transform: scale(1.2);
+}
+
+.courses .courses-col a {
+    color: #225343;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    transition: 1s;
+}
+
+.courses .courses-col a:hover {
+    text-decoration: underline;
+}
+
+.courses .courses-btn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.courses .courses-btn a {
+    background-color: #225343;
+    padding: 20px 25px;
+    margin: 20px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+    transition: 0.5s;
+}
+
+.courses .courses-btn a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+
+    /* courses section */
+    .courses {
+        width: 100%;
+        margin: 100px 0 0 0;
+    }
+
+    .courses-row {
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .courses-head-img {
+        transform: scale(1.4);
+    }
+}
