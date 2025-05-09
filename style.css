@@ -78,7 +78,6 @@ nav a:hover {
 
 .courses-head-img {
     width: 100%;
-    display: block;
 }
 
 .courses .courses-btn {
@@ -112,6 +111,6 @@ nav a:hover {
     /* courses section */
     .courses {
         width: 100%;
-        margin: 100px 0 0 0;
+        margin: 100px auto 0;
     }
 }
