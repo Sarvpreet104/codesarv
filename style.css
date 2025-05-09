@@ -78,57 +78,7 @@ nav a:hover {
 
 .courses-head-img {
     width: 100%;
-}
-
-.courses-row {
-    display: flex;
-    gap: 20px;
-    flex-basis: auto;
-
-    width: 90%;
-    margin: auto;
-}
-
-.courses-col {
-    border-radius: 30px;
-    width: 100%;
-}
-
-.courses-col div {
-    overflow: hidden;
-    border-radius: 30px;
-    width: 100%;
-}
-
-.courses-col img {
-    width: 100%;
-    border-radius: 30px;
     display: block;
-
-    transition: 1s;
-}
-
-.courses-col img:hover {
-    transform: scale(1.2);
-}
-
-.courses .courses-col a {
-    color: #225343;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    transition: 1s;
-}
-
-.courses .courses-col a:hover {
-    text-decoration: underline;
 }
 
 .courses .courses-btn {
@@ -163,11 +113,6 @@ nav a:hover {
     .courses {
         width: 100%;
         margin: 100px 0 0 0;
-    }
-
-    .courses-row {
-        flex-direction: column;
-        width: 60%;
     }
 
     .courses-head-img {
