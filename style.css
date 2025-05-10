@@ -67,12 +67,17 @@ nav a:hover {
 
 /* Course section */
 .courses {
-    margin: 100px 0 0;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .courses .courses-head {
     width: 80%;
-    margin: auto;
     overflow: hidden;
 }
 
