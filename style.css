@@ -76,11 +76,7 @@ nav a:hover {
     gap: 20px;
 }
 
-.courses .courses-head {
-    width: 80%;
-    overflow: hidden;
-}
 
-.courses .courses-head img {
-    width: 100%;
+.courses img {
+    width: 80dvw;
 }
