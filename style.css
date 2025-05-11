@@ -69,27 +69,28 @@ nav a:hover {
 }
 
 /* Course section */
-.courses {
+.home-content {
     margin-top: 100px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
-.courses .courses-head {
+.home-content-head {
     width: 80%;
     overflow: hidden;
 }
 
-.courses .courses-head img {
+.courses-head img,
+.notes-head img {
     width: 100%;
     height: auto;
 }
 
-.courses .courses-row {
+.home-row {
     width: 70%;
 
     display: flex;
@@ -97,13 +98,13 @@ nav a:hover {
     flex-basis: auto;
 }
 
-.courses .courses-row .courses-col div {
+.home-col div {
     width: 100%;
     border-radius: 30px;
     overflow: hidden;
 }
 
-.courses .courses-row .courses-col div img {
+.home-col div img {
     width: 100%;
     border-radius: 30px;
 
@@ -112,11 +113,11 @@ nav a:hover {
     transition: 1s;
 }
 
-.courses .courses-row .courses-col div img:hover {
+.home-col div img:hover {
     transform: scale(1.2);
 }
 
-.courses .courses-row .courses-col a {
+.home-col a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,34 +130,32 @@ nav a:hover {
     color: #225343;
 }
 
-.courses .courses-row .courses-col a:hover {
+.home-col a:hover {
     text-decoration: underline;
 }
 
-.courses .courses-btn {
-    background-color: #225343;
-    padding: 15px 20px;
-    margin: 10px 0;
-
+.home-btn {
     transition: 0.5s;
 }
 
-.courses .courses-btn:hover {
+.home-btn:hover {
     transform: scale(1.1);
 }
 
-.courses .courses-btn a {
+.home-btn a {
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 600;
+    background-color: #225343;
+    padding: 15px 20px;
+    font-size: 16px;
 
     transition: 0.5s;
 }
 
-.courses .courses-btn a:hover {
+.home-btn a:hover {
     text-decoration: underline;
 }
-
 
 @media (max-width: 768px) {
 
@@ -177,16 +176,21 @@ nav a:hover {
         gap: 20px;
     }
 
-    /* courses section */
-    .courses .courses-head {
+    /* courses section, notes */
+    .home-content-head {
         width: 95%;
     }
 
-    .courses .courses-head img {
+    .courses-head img {
         transform: scale(1.4);
     }
 
-    .courses .courses-row {
+    .home-row {
         flex-direction: column;
     }
+
+    .home-btn a {
+        font-size: 12px;
+    }
+
 }
