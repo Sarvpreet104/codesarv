@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>codeSarv</title>
+    <title>codeSarv – Learn Coding the Easy Way</title>
 
+    <!-- meta tags for SEO -->
+    <!-- SEO Meta -->
+    <meta name="description"
+        content="codeSarv – Learn coding the easy way with beginner-friendly courses, notes, and resources.">
+    <meta name="keywords" content="codeSarv, Learn to code, Programming courses, DBMS notes, PYQs, C++, HTML, CSS">
+    <meta name="author" content="Sarvpreet Singh">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (for social sharing like WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="codeSarv – Learn Coding the Easy Way">
+    <meta property="og:description" content="Explore coding courses, notes, and practical tech tutorials.">
+    <meta property="og:image" content="https://codesarv.com/asset/codesarv_logo.png">
+    <meta property="og:url" content="https://codesarv.com">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="./asset/codesarv_logo.png" type="image/x-icon">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "codeSarv",
+      "url": "https://codesarv.com",
+      "logo": "https://codesarv.com/asset/codesarv_logo.png",
+      "sameAs": []
+    }
+    </script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,142 +55,155 @@
     <header>
         <h1>
             <a href="./index.html" aria-label="codeSarv homepage">
-                <img src="./asset/codesarv_logo.png" alt="codeSarv logo" class="logo main-logo" draggable="false">
+                <img src="./asset/codesarv_logo.png" alt="codeSarv logo. codeSarv – Learn Coding the Easy Way"
+                    class="logo main-logo" draggable="false" loading="lazy">
+                <span class="visually-hidden">codeSarv – Learn Coding the Easy Way</span>
             </a>
         </h1>
 
         <p>Learn coding the easy way.</p>
+
+        <!-- navbar -->
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Notes</a></li>
+                <li><a href="#">PYQs</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- navbar -->
-    <nav>
-        <ul>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Notes</a></li>
-            <li><a href="#">PYQs</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Privacy</a></li>
-        </ul>
-    </nav>
+    <main>
 
-    <!-- carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                class="active"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-        </div>
+        <!-- carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+            </div>
 
-        <!-- Carousel Items -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./asset/welcome.png" class="d-block w-100"
-                    alt="Welcome to codeSarv. Your go-to hub for coding knowledge, developer tools, and practical tech tutorials. Whether you're a beginner or building something big — codeSarv has your back.">
-                <div class="carousel-caption d-none d-md-block">
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./asset/welcome.png" class="d-block w-100"
+                        alt="Welcome to codeSarv. Your go-to hub for coding knowledge, developer tools, and practical tech tutorials. Whether you're a beginner or building something big — codeSarv has your back."
+                        loading="lazy">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./asset/welcome2.png" class="d-block w-100" alt="Focused on learning & growth. codeSarv - Where Code Meets Clarity
+                Master programming concepts, explore smart solutions, and grow with clean, beginner-friendly content."
+                        loading="lazy">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="./asset/welcome2.png" class="d-block w-100" alt="Focused on learning & growth. codeSarv - Where Code Meets Clarity
-                Master programming concepts, explore smart solutions, and grow with clean, beginner-friendly content.">
-                <div class="carousel-caption d-none d-md-block">
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+
+        <!-- courses section -->
+        <section class="courses home-content">
+            <h2>Popular Courses</h2>
+
+            <div class="courses-head home-content-head">
+                <img src="./asset/p_courses.png" alt="Popular Courses" draggable="false" loading="lazy">
+            </div>
+
+            <div class="courses-row home-row">
+                <div class="courses-col home-col">
+                    <a href="#">
+                        <div>
+                            <img src="./asset/cpp.png" alt="C++ Course link image" loading="lazy">
+                        </div>
+                        <h3>C++</h3>
+                    </a>
+                </div>
+
+                <div class="courses-col home-col">
+                    <a href="#">
+                        <div>
+                            <img src="./asset/html.png" alt="HTML Course link image" loading="lazy">
+                        </div>
+                        <h3>HTML</h3>
+                    </a>
+                </div>
+
+                <div class="courses-col home-col">
+                    <a href="#">
+                        <div>
+                            <img src="./asset/css.png" alt="CSS Course link image" loading="lazy">
+                        </div>
+                        <h3>CSS</h3>
+                    </a>
                 </div>
             </div>
-        </div>
 
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
+            <div class="courses-btn home-btn">
+                <a href="#">EXPLORE COURSES</a>
+            </div>
+        </section>
 
+        <!-- notes section -->
+        <section class="notes home-content">
 
-    <!-- courses section -->
-    <section class="courses home-content">
-        <div class="courses-head home-content-head">
-            <img src="./asset/p_courses.png" alt="Popular Courses" draggable="false">
-        </div>
+            <h2>Course Notes</h2>
 
-        <div class="courses-row home-row">
-            <div class="courses-col home-col">
-                <a href="#">
-                    <div>
-                        <img src="./asset/cpp.png" alt="C++ Course">
-                    </div>
-                    C++
-                </a>
+            <div class="notes-head home-content-head">
+                <img src="./asset/n_courses.png" alt="Courses Notes" loading="lazy">
             </div>
 
-            <div class="courses-col home-col">
-                <a href="#">
-                    <div>
-                        <img src="./asset/html.png" alt="HTML Course">
-                    </div>
-                    HTML
-                </a>
+            <div class="notes-row home-row">
+                <div class="notes-col home-col">
+                    <a href="#">
+                        <div>
+                            <img src="./asset/dbms.png" alt="DBMS Notes link image" loading="lazy">
+                        </div>
+                        <h3>DBMS</h3>
+                    </a>
+                </div>
+
+                <div class="notes-col home-col">
+                    <a href="#">
+                        <div>
+                            <img src="./asset/os.png" alt="OS Notes link image" loading="lazy">
+                        </div>
+                        <h3>OS</h3>
+                    </a>
+                </div>
+
+                <div class="notes-col home-col">
+                    <a href="#">
+                        <div>
+                            <img src="./asset/iwt.png" alt="IWT Notes link image" loading="lazy">
+                        </div>
+                        <h3>IWT</h3>
+                    </a>
+                </div>
             </div>
 
-            <div class="courses-col home-col">
-                <a href="#">
-                    <div>
-                        <img src="./asset/css.png" alt="CSS Course">
-                    </div>
-                    CSS
-                </a>
-            </div>
-        </div>
-
-        <div class="courses-btn home-btn">
-            <a href="#">EXPLORE COURSES</a>
-        </div>
-    </section>
-
-    <!-- notes section -->
-    <section class="notes home-content">
-        <div class="notes-head home-content-head">
-            <img src="./asset/n_courses.png" alt="Courses Notes">
-        </div>
-
-        <div class="notes-row home-row">
-            <div class="notes-col home-col">
-                <a href="#">
-                    <div>
-                        <img src="./asset/dbms.png" alt="DBMS Notes">
-                    </div>
-                    DBMS
-                </a>
+            <div class="notes-btn home-btn">
+                <a href="#">EXPLORE NOTES</a>
             </div>
 
-            <div class="notes-col home-col">
-                <a href="#">
-                    <div>
-                        <img src="./asset/os.png" alt="OS Notes">
-                    </div>
-                    OS
-                </a>
-            </div>
+        </section>
 
-            <div class="notes-col home-col">
-                <a href="#">
-                    <div>
-                        <img src="./asset/iwt.png" alt="IWT Notes">
-                    </div>
-                    IWT
-                </a>
-            </div>
-        </div>
-
-        <div class="notes-btn home-btn">
-            <a href="#">EXPLORE NOTES</a>
-        </div>
-
-    </section>
+    </main>
 
     <!-- footer section -->
     <footer class="py-3 my-4">
@@ -167,7 +215,8 @@
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Privacy</a></li>
         </ul>
-        <p class="text-center text-body-secondary">© 2025 codeSarv | All Rights Reserved.</p>
+        <p class="text-center text-body-secondary">© 2025 codeSarv | All Rights Reserved. Developed by Sarvpreet Singh.
+        </p>
     </footer>
 
     <!-- bootstrap js -->
