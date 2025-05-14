@@ -32,12 +32,12 @@ header p {
 
 /* navbar */
 nav {
-    margin: 60px auto 0;
+    margin: 60px auto 50px;
     width: 80%;
     background-color: #225343;
     color: white;
     border-radius: 30px;
-    padding: 25px 20px;
+    padding: 20px;
 
     display: flex;
     flex-wrap: wrap;
@@ -71,6 +71,7 @@ nav a:hover {
 /* Course section */
 .home-content {
     margin-top: 100px;
+    margin-bottom: 50px;
 
     display: flex;
     flex-direction: column;
@@ -193,4 +194,16 @@ nav a:hover {
         font-size: 12px;
     }
 
+}
+
+@media (min-width: 768px) {
+    .carousel {
+        width: 80%;
+        margin: auto;
+    }
+
+    footer {
+        width: 80%;
+        margin: auto;
+    }
 }
