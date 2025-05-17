@@ -67,6 +67,8 @@ header {
 
 .main-logo {
     width: 250px;
+    height: auto;
+    aspect-ratio: 3 / 2;
 }
 
 header p {
@@ -119,6 +121,13 @@ main {
     border-radius: 30px;
 }
 
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16 / 9;
+}
+
 /* Course section */
 .home-content {
     display: flex;
@@ -137,6 +146,9 @@ main {
 .courses-head img,
 .notes-head img {
     width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16 / 4;
 }
 
 .home-row {
@@ -153,10 +165,12 @@ main {
 
 .home-col div img {
     width: 100%;
+    height: auto;
     border-radius: 30px;
-
     display: block;
+    aspect-ratio: 9 / 14;
 
+    will-change: transform;
     transition: 1s;
 }
 
