@@ -148,7 +148,7 @@ main {
     width: 100%;
     height: auto;
     display: block;
-    aspect-ratio: 16 / 4;
+    aspect-ratio: 3.84;
 }
 
 .home-row {
@@ -168,7 +168,7 @@ main {
     height: auto;
     border-radius: 30px;
     display: block;
-    aspect-ratio: 9 / 14;
+    aspect-ratio: 0.67;
 
     will-change: transform;
     transition: 1s;
