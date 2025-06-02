@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 :root {
     --bg-color: #0E1A1A;
     --ele-bg-color: #1F2E2E;
@@ -23,7 +35,6 @@ h2,
 h3,
 h4 {
     color: var(--primary-color);
-    margin: 0 0 10px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -52,7 +63,6 @@ p {
     font-weight: 400;
     line-height: 1.7;
     color: var(--secondary-color);
-    margin: 0 0 10px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -174,8 +184,8 @@ main {
     margin: 3rem auto 0;
 }
 
-.course-section>h2,
-.course-section>p {
+.sub-para,
+.sub-heading {
     text-align: center;
 }
 
@@ -213,6 +223,10 @@ main {
 
 .course-desc {
     padding: 20px;
+}
+
+.course-desc p {
+    padding: 10px 0;
 }
 
 .course-text span {
@@ -255,6 +269,39 @@ footer {
     height: 2px;
     background-color: white;
 }
+
+/* coming-soon */
+.coming-soon-section {
+    width: 100%;
+    margin: 5rem 0 0;
+}
+
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.coming-soon-container {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 30px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.coming-soon-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+    aspect-ratio: 3 / 2;
+}
+
 
 @media (max-width: 780px) {
 
