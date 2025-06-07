@@ -41,6 +41,7 @@ h4 {
 h1 {
     font-size: clamp(2.2rem, 5vw, 3.5rem);
     font-weight: 700;
+    text-align: center;
 }
 
 h2 {
@@ -302,6 +303,92 @@ footer {
     aspect-ratio: 3 / 2;
 }
 
+/* primary card */
+.card-primary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+    border: 3px solid var(--borders-color);
+
+    width: 90%;
+    flex: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    background-color: var(--ele-bg-color);
+    border-radius: 30px;
+    padding: 4rem 2rem;
+}
+
+
+/* secondary card */
+.card-secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+
+    width: 90%;
+    flex: 1;
+
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 4rem 2rem;
+}
+
+/* social button */
+.social-btn {
+    border-radius: 50%;
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+/* social-section */
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    margin: 5rem 0 0;
+    width: 100%;
+}
+
+.social-btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.about-heading {
+    margin-top: 2rem;
+}
+
+/* content section */
+.content-section h2,
+.content-section h3,
+.content-section h4 {
+    margin: 3rem 0 1.5rem;
+}
+
+.no-bullet-ul {
+    list-style: none;
+    padding: 0 2rem 0;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--secondary-color);
+    font-family: 'Inter', sans-serif;
+}
 
 @media (max-width: 780px) {
 
@@ -327,5 +414,10 @@ footer {
 
     .course {
         max-width: calc(85.333% - 20px);
+    }
+
+    /* social section */
+    .social {
+        flex-direction: column;
     }
 }
