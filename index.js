@@ -16,8 +16,8 @@ function loadHTML(elementId, url) {
 
 // Load header and footer when the DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
-    loadHTML('header', 'header.html');
-    loadHTML('footer', 'footer.html');
+    loadHTML('header', './public/header.html');
+    loadHTML('footer', './public/footer.html');
 });
 
 
