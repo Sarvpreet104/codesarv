@@ -26,10 +26,16 @@ let all_btn = document.querySelectorAll('button');
 
 for (let i = 0; i < all_btn.length; i++) {
 
-    all_btn[i].addEventListener('click', () => {
-        window.location.href = './coming-soon.html';
-    });
-
+    if (all_btn[i].id === "contact-btn-about") {
+        all_btn[i].addEventListener('click', () => {
+            window.location.href = './contact.html'
+        });
+    }
+    else {
+        all_btn[i].addEventListener('click', () => {
+            window.location.href = './coming-soon.html';
+        });
+    }
 }
 
 
